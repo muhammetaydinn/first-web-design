@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content=" (GetTemplate.com)" />
+
+    <title>Courses</title>
+    <style>
+      /* Create two equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+        margin: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+    <script>
+      // Get the elements with class="column"
+      var elements = document.getElementsByClassName("column");
+
+      // Declare a loop variable
+      var i;
+
+      // List View
+      function listView() {
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.width = "100%";
+        }
+      }
+
+      // Grid View
+      function gridView() {
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.width = "25%";
+        }
+      }
+    </script>
+
+    <link rel="shortcut icon" href="assets/images/gt_favicon.png" />
+
+    <!-- Bootstrap -->
+    <link
+      href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Icon font -->
+    <link
+      href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700"
+    />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body style="background-color: #c8e8e9">
+    <header id="header">
+      <nav class="navbar navbar-default navbar-sticky">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span> <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="home.html">Ana Sayfa</a></li>
+              <li><a href="courses.html">Eğitimler</a></li>
+              <li><a href="contact.html">İletişim</a></li>
+              <li><a href="who_are_we.html">Biz Kimiz</a></li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+      </nav>
+    </header>
+    <!-- /header -->
+
+    <!-- Load Font Awesome Icon Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Buttons to choose list or grid view -->
+    <button onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+
+    <div class="row" style="margin-left: 15px">
+      <div
+        class="column"
+        style="
+          background-color: rgba(64, 73, 141, 0.41);
+          border-radius: 10px;
+          aspect-ratio: 7 / 5;
+          min-width: 200px;
+          width: 25%;
+        "
+      >
+        <div
+          class="card-deck dashboard-card-deck"
+          data-region="card-deck"
+          role="list"
+        >
+          <div
+            class="card dashboard-card edwanimate-none course_card-0"
+            role="listitem"
+            data-region="course-content"
+            data-course-id="5"
+          >
+            <div class="img-container position-relative">
+              <a
+                href="https://akademi.softito.com.tr/course/view.php?id=5"
+                aria-label="Course - "
+              >
+              </a>
+              <div
+                class="rounded-top"
+                style="
+                  background-image: url('https://akademi.softito.com.tr/pluginfile.php/55/course/overviewfiles/SoftITo%20Ba%C5%9Fvuru%201-05.png');
+                  background-size: cover;
+                  background-position: center;
+                  position: relative;
+                  height: 200px;
+                  border-radius: 8px;
+                "
+              >
+                <a
+                  href="https://akademi.softito.com.tr/course/view.php?id=5"
+                  aria-label="Course - "
+                >
+                  <div class="right-top-menu">
+                    <div class="favirite-icon-wrapper">
+                      <span
+                        id="favorite-icon-5-2"
+                        data-region="favourite-icon"
+                        data-course-id="5"
+                      >
+                        <span
+                          class="hidden"
+                          data-region="is-favourite"
+                          aria-hidden="true"
+                        >
+                          <i
+                            class="icon fa fa-star fa-fw"
+                            title="Yıldızlı ders"
+                            role="img"
+                            aria-label="Yıldızlı ders"
+                          ></i>
+                          <span class="sr-only">Yıldızlı ders</span>
+                        </span>
+                      </span>
+                    </div>
+                  </div> </a
+                ><a
+                  href="https://akademi.softito.com.tr/user/profile.php?id=49"
+                  class="d-flex justify-content-end instructor-img"
+                  aria-label="Instructor for  is - Mustafa Agaoglu"
+                  data-toggle="tooltip"
+                  title=""
+                  style="position: absolute; top: 175px; right: 25px"
+                  data-original-title="Mustafa Agaoglu"
+                >
+                  <img
+                    src="https://akademi.softito.com.tr/theme/image.php/remui/core/1673797953/u/f1"
+                    style="
+                      border: 2px solid white;
+                      cursor: pointer;
+                      height: 50px;
+                      width: 50px;
+                    "
+                    class="rounded-circle"
+                    alt="Mustafa Agaoglu"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="card-body pb-0"
+              title="
+
+            Mobile Developer  Eğitimi
+
+    "
+            >
+              <div class="m-1 font-size-10"></div>
+              <span
+                class="text-muted ellipsis ellipsis-2"
+                style="-webkit-box-orient: vertical"
+                tabindex="-1"
+              >
+                <span class="sr-only"> Dersin kategorisi </span>
+                <span class="categoryname text-truncate"> SoftITo </span>
+              </span>
+              <h4
+                class="card-title my-1 ellipsis ellipsis-3"
+                style="-webkit-box-orient: vertical"
+              >
+                <a
+                  href="https://akademi.softito.com.tr/course/view.php?id=5"
+                  class="font-weight-400 font-size-18"
+                  tabindex="-1"
+                >
+                  Mobile Developer Eğitimi
+                </a>
+              </h4>
+              <div class="left-bottom-menu">
+                <div class="progress-text">
+                  <span class="sr-only">Ders ilerlemesi:</span>
+                  <span>93% complete</span>
+                </div>
+              </div>
+              <span
+                class="card-text ellipsis ellipsis-2 m-0 pt-2"
+                style="-webkit-box-orient: vertical"
+              ></span>
+            </div>
+            <div class="d-flex align-items-end">
+              <div
+                class="card-footer dashboard-card-footer menu border-0 bg-transparent ml-auto"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- /header -->
+      </div>
+      <div
+        class="column"
+        style="
+          background-color: rgba(64, 73, 141, 0.41);
+          border-radius: 10px;
+          aspect-ratio: 7 / 5;
+          min-width: 200px;
+          width: 25%;
+        "
+      >
+        <div
+          class="card-deck dashboard-card-deck"
+          data-region="card-deck"
+          role="list"
+        >
+          <div
+            class="card dashboard-card edwanimate-none course_card-0"
+            role="listitem"
+            data-region="course-content"
+            data-course-id="5"
+          >
+            <div class="img-container position-relative">
+              <a
+                href="https://akademi.softito.com.tr/course/view.php?id=5"
+                aria-label="Course - "
+              >
+              </a>
+              <div
+                class="rounded-top"
+                style="
+                  background-image: url('https://akademi.softito.com.tr/pluginfile.php/55/course/overviewfiles/SoftITo%20Ba%C5%9Fvuru%201-05.png');
+                  background-size: cover;
+                  background-position: center;
+                  position: relative;
+                  height: 200px;
+                  border-radius: 8px;
+                "
+              >
+                <a
+                  href="https://akademi.softito.com.tr/course/view.php?id=5"
+                  aria-label="Course - "
+                >
+                  <div class="right-top-menu">
+                    <div class="favirite-icon-wrapper">
+                      <span
+                        id="favorite-icon-5-2"
+                        data-region="favourite-icon"
+                        data-course-id="5"
+                      >
+                        <span
+                          class="hidden"
+                          data-region="is-favourite"
+                          aria-hidden="true"
+                        >
+                          <i
+                            class="icon fa fa-star fa-fw"
+                            title="Yıldızlı ders"
+                            role="img"
+                            aria-label="Yıldızlı ders"
+                          ></i>
+                          <span class="sr-only">Yıldızlı ders</span>
+                        </span>
+                      </span>
+                    </div>
+                  </div> </a
+                ><a
+                  href="https://akademi.softito.com.tr/user/profile.php?id=49"
+                  class="d-flex justify-content-end instructor-img"
+                  aria-label="Instructor for  is - Mustafa Agaoglu"
+                  data-toggle="tooltip"
+                  title=""
+                  style="position: absolute; top: 175px; right: 25px"
+                  data-original-title="Mustafa Agaoglu"
+                >
+                  <img
+                    src="https://akademi.softito.com.tr/theme/image.php/remui/core/1673797953/u/f1"
+                    style="
+                      border: 2px solid white;
+                      cursor: pointer;
+                      height: 50px;
+                      width: 50px;
+                    "
+                    class="rounded-circle"
+                    alt="Mustafa Agaoglu"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="card-body pb-0"
+              title="
+
+            Mobile Developer  Eğitimi
+
+    "
+            >
+              <div class="m-1 font-size-10"></div>
+              <span
+                class="text-muted ellipsis ellipsis-2"
+                style="-webkit-box-orient: vertical"
+                tabindex="-1"
+              >
+                <span class="sr-only"> Dersin kategorisi </span>
+                <span class="categoryname text-truncate"> SoftITo </span>
+              </span>
+              <h4
+                class="card-title my-1 ellipsis ellipsis-3"
+                style="-webkit-box-orient: vertical"
+              >
+                <a
+                  href="https://akademi.softito.com.tr/course/view.php?id=5"
+                  class="font-weight-400 font-size-18"
+                  tabindex="-1"
+                >
+                  Mobile Developer Eğitimi
+                </a>
+              </h4>
+              <div class="left-bottom-menu">
+                <div class="progress-text">
+                  <span class="sr-only">Ders ilerlemesi:</span>
+                  <span>93% complete</span>
+                </div>
+              </div>
+              <span
+                class="card-text ellipsis ellipsis-2 m-0 pt-2"
+                style="-webkit-box-orient: vertical"
+              ></span>
+            </div>
+            <div class="d-flex align-items-end">
+              <div
+                class="card-footer dashboard-card-footer menu border-0 bg-transparent ml-auto"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- /header -->
+      </div>
+    </div>
+
+    <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/template.js"></script>
+  </body>
+</html>

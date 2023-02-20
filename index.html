@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Login-Register</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      /* #3e2093
+#c8e8e9 */
+      #button {
+        width: 6em;
+        border: 2px solid green;
+        background: #ffe;
+        border-radius: 5px;
+      }
+
+      a {
+        display: block;
+        width: 100%;
+        line-height: 2em;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      a:hover {
+        color: red;
+        background: #eff;
+      }
+      .screen {
+        position: relative;
+      }
+      .innerdiv {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+    <div class="login-page">
+      <div class="form">
+        <form class="register-form">
+          <input type="text" placeholder="name" />
+          <input type="password" placeholder="password" />
+          <input type="text" placeholder="email address" />
+          <a href="home.html" style="background-color: #3e2093; color: white">
+            create
+          </a>
+          <p class="message">
+            Already registered? <a style="color: #3e2093" href="#">Sign In</a>
+          </p>
+        </form>
+        <form class="login-form">
+          <input type="text" placeholder="username" />
+          <input type="password" placeholder="password" />
+
+          <a href="home.html" style="background-color: #3e2093; color: white">
+            login
+          </a>
+          <p class="message">
+            Not registered?
+            <a style="color: #3e2093" href="#">Create an account</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+  <div class="innerdiv"><span id="date-time"></span>.</div>
+  <div>
+    <script>
+      var dt = new Date();
+      document.getElementById("date-time").innerHTML = dt;
+    </script>
+  </div>
+</html>
